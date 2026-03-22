@@ -1,75 +1,54 @@
-import Image from "next/image";
+"use client";
 
 export default function About() {
   return (
-    <section id="sobre" className="section-padding bg-white">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-2xl">
-            <Image
-              src="/images/loja-5.jpg"
-              alt="Interior da Ótica Zanfir - Display de óculos"
-              width={1200}
-              height={900}
-              className="h-auto w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6">
-              <p className="font-display text-lg text-white/90 italic">
-                &ldquo;Você vê a diferença&rdquo;
-              </p>
-            </div>
+    <section className="bg-neutral-950 py-20 md:py-32 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Large statement text */}
+        <div className="max-w-5xl">
+          <h2 className="reveal font-display font-bold text-display-lg text-white leading-tight">
+            Tradicao e sofisticacao{" "}
+            <span className="text-brand-400">em cada detalhe.</span>
+          </h2>
+          <p className="reveal reveal-delay-1 mt-8 text-white/50 text-lg md:text-xl max-w-2xl leading-relaxed">
+            Ha anos cuidando da sua visao com as melhores marcas do mundo.
+            Atendimento personalizado no coracao de Erechim.
+          </p>
+        </div>
+
+        {/* Stats row */}
+        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="reveal">
+            <span className="font-display text-display-md text-brand-400 font-bold block">
+              14+
+            </span>
+            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
+              Marcas Premium
+            </span>
           </div>
-
-          {/* Text */}
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">
-              Sobre nós
-            </p>
-            <h2 className="section-title mt-2">
-              Tradição e sofisticação em cada detalhe
-            </h2>
-            <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
-              <p>
-                A Ótica Zanfir é referência em óculos de grau e sol no centro de
-                Erechim. Com um ambiente moderno e acolhedor, oferecemos as
-                melhores marcas internacionais para quem busca qualidade,
-                sofisticação e estilo.
-              </p>
-              <p>
-                Nosso atendimento personalizado garante que cada cliente encontre
-                a armação perfeita, com orientação especializada na escolha de
-                lentes e modelos que combinam com seu estilo de vida e
-                personalidade.
-              </p>
-              <p>
-                Trabalhamos com marcas consagradas mundialmente como Gucci, YSL,
-                Chloé, Jimmy Choo, entre outras, trazendo para Erechim o que há
-                de melhor em design e tecnologia óptica.
-              </p>
-            </div>
-
-            {/* Stats */}
-            <div className="mt-10 grid grid-cols-3 gap-6 border-t border-gray-100 pt-8">
-              <div>
-                <p className="text-3xl font-bold text-brand-400">14+</p>
-                <p className="mt-1 text-sm text-gray-500">
-                  Marcas Premium
-                </p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-brand-400">100%</p>
-                <p className="mt-1 text-sm text-gray-500">
-                  Atendimento Personalizado
-                </p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-brand-400">Centro</p>
-                <p className="mt-1 text-sm text-gray-500">
-                  de Erechim
-                </p>
-              </div>
-            </div>
+          <div className="reveal reveal-delay-1">
+            <span className="font-display text-display-md text-brand-400 font-bold block">
+              100%
+            </span>
+            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
+              Personalizado
+            </span>
+          </div>
+          <div className="reveal reveal-delay-2">
+            <span className="font-display text-display-md text-brand-400 font-bold block">
+              Centro
+            </span>
+            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
+              De Erechim
+            </span>
+          </div>
+          <div className="reveal reveal-delay-3">
+            <span className="font-display text-display-md text-brand-400 font-bold block">
+              6x
+            </span>
+            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
+              Por Semana
+            </span>
           </div>
         </div>
       </div>

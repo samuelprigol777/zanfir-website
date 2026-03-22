@@ -3,126 +3,128 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#marcas", label: "Marcas" },
-  { href: "#galeria", label: "Galeria" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#contato", label: "Contato" },
+  { label: "Inicio", href: "#hero" },
+  { label: "Marcas", href: "#brands" },
+  { label: "Galeria", href: "#gallery" },
+  { label: "Servicos", href: "#services" },
+  { label: "Contato", href: "#contact" },
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between md:h-20">
-          {/* Logo */}
-          <a
-            href="#"
-            className={`text-xl font-display font-bold tracking-wide transition-colors ${
-              scrolled ? "text-brand-400" : "text-white"
-            }`}
-          >
-            ÓTICA ZANFIR
-          </a>
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-brand-400 ${
-                  scrolled ? "text-gray-700" : "text-white/90"
-                }`}
-              >
-                {link.label}
-              </a>
-            ))}
+  return (
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-neutral-950/90 backdrop-blur-md border-b border-white/5"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="flex items-center justify-between px-5 md:px-8 h-14 md:h-16">
+          {/* Social links left */}
+          <div className="flex items-center gap-4 text-xs tracking-[0.2em] uppercase">
             <a
-              href="https://wa.me/555437124500?text=Olá! Gostaria de agendar uma visita na Ótica Zanfir."
+              href="https://wa.me/555437124500"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-brand-400 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-brand-500 hover:shadow-lg"
+              className="link-hover text-white/70 hover:text-brand-400 transition-colors"
+            >
+              WA
+            </a>
+            <a
+              href="https://www.instagram.com/oticazanfir/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-hover text-white/70 hover:text-brand-400 transition-colors"
+            >
+              IG
+            </a>
+          </div>
+
+          {/* Logo center */}
+          <a
+            href="#hero"
+            className="font-display font-bold text-sm md:text-base tracking-[0.15em] uppercase text-white hover:text-brand-400 transition-colors"
+          >
+            Otica Zanfir
+          </a>
+
+          {/* Hamburger right */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="relative w-8 h-8 flex flex-col items-center justify-center gap-1.5 z-[60]"
+            aria-label="Menu"
+          >
+            <span
+              className={`block w-6 h-[1.5px] bg-white transition-all duration-300 ${
+                menuOpen ? "rotate-45 translate-y-[4.5px]" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-[1.5px] bg-white transition-all duration-300 ${
+                menuOpen ? "-rotate-45 -translate-y-[4.5px]" : ""
+              }`}
+            />
+          </button>
+        </div>
+      </header>
+
+      {/* Full-screen menu overlay */}
+      <div
+        className={`menu-overlay fixed inset-0 z-[55] bg-neutral-950 flex items-center justify-center ${
+          menuOpen ? "open" : ""
+        }`}
+      >
+        <nav className="text-center">
+          <ul className="space-y-6">
+            {navLinks.map((link, i) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="font-display text-display-md text-white hover:text-brand-400 transition-colors block"
+                  style={{ transitionDelay: menuOpen ? `${i * 0.05}s` : "0s" }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-12 text-white/40 text-sm tracking-widest uppercase">
+            <a
+              href="https://wa.me/555437124500"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-400 transition-colors"
             >
               WhatsApp
             </a>
-          </nav>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              scrolled ? "text-gray-700" : "text-white"
-            }`}
-            aria-label="Menu"
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-            >
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile menu */}
-      <div
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? "max-h-96 bg-white shadow-lg" : "max-h-0"
-        }`}
-      >
-        <nav className="flex flex-col px-4 py-4 gap-1">
-          {navLinks.map((link) => (
+            <span className="mx-3">/</span>
             <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-4 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-brand-50 hover:text-brand-400"
+              href="https://www.instagram.com/oticazanfir/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-brand-400 transition-colors"
             >
-              {link.label}
+              Instagram
             </a>
-          ))}
-          <a
-            href="https://wa.me/555437124500?text=Olá! Gostaria de agendar uma visita na Ótica Zanfir."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 rounded-full bg-brand-400 px-5 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-brand-500"
-          >
-            WhatsApp
-          </a>
+          </div>
         </nav>
       </div>
-    </header>
+    </>
   );
 }

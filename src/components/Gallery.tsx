@@ -1,76 +1,88 @@
+"use client";
+
 import Image from "next/image";
 
-const photos = [
+const galleryItems = [
   {
     src: "/images/loja-1.jpg",
-    alt: "Display de óculos de sol na parede",
-    width: 1200,
-    height: 900,
-    className: "col-span-1 row-span-1",
+    alt: "Parede de oculos de sol",
+    aspect: "aspect-[4/3]",
+    span: "md:col-span-2",
+    label: "Colecao de Sol",
   },
   {
     src: "/images/loja-2.jpg",
-    alt: "Interior da loja - vista retrato",
-    width: 1200,
-    height: 1600,
-    className: "col-span-1 row-span-2",
+    alt: "Interior da loja",
+    aspect: "aspect-[3/4]",
+    span: "md:row-span-2",
+    label: "Ambiente Exclusivo",
   },
   {
     src: "/images/loja-3.jpg",
-    alt: "Área de atendimento com assentos",
-    width: 1200,
-    height: 900,
-    className: "col-span-1 row-span-1",
+    alt: "Area de atendimento",
+    aspect: "aspect-[4/3]",
+    span: "",
+    label: "Atendimento",
   },
   {
     src: "/images/loja-4.jpg",
-    alt: "Interior da loja - outro ângulo",
-    width: 1200,
-    height: 900,
-    className: "col-span-1 row-span-1",
-  },
-  {
-    src: "/images/loja-5.jpg",
-    alt: "Parede principal com letreiro Ótica Zanfir",
-    width: 1200,
-    height: 900,
-    className: "col-span-1 row-span-1",
+    alt: "Exposicao de armacoes",
+    aspect: "aspect-[4/3]",
+    span: "",
+    label: "Armacoes",
   },
   {
     src: "/images/loja-6.jpg",
-    alt: "Interior da loja - vista retrato",
-    width: 1200,
-    height: 1600,
-    className: "col-span-1 row-span-2",
+    alt: "Vista interior",
+    aspect: "aspect-[3/4]",
+    span: "",
+    label: "Detalhes",
+  },
+  {
+    src: "/images/loja-5.jpg",
+    alt: "Parede Otica Zanfir",
+    aspect: "aspect-[4/3]",
+    span: "md:col-span-2",
+    label: "Nossa Loja",
   },
 ];
 
 export default function Gallery() {
   return (
-    <section id="galeria" className="section-padding bg-white">
-      <div className="mx-auto max-w-7xl text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-brand-400">
+    <section id="gallery" className="bg-neutral-950 py-16 md:py-24 px-4 md:px-8">
+      {/* Section header */}
+      <div className="max-w-7xl mx-auto mb-10 md:mb-14">
+        <p className="reveal text-brand-400 text-xs tracking-[0.3em] uppercase mb-4">
           Galeria
         </p>
-        <h2 className="section-title mt-2">Conheça nosso espaço</h2>
-        <p className="section-subtitle">
-          Um ambiente projetado para oferecer a melhor experiência na escolha
-          dos seus óculos.
-        </p>
+        <h2 className="reveal font-display font-bold text-display-md text-white">
+          Conheca nosso <span className="text-brand-400">espaco</span>
+        </h2>
+      </div>
 
-        <div className="mt-14 columns-1 gap-4 space-y-4 sm:columns-2 lg:columns-3">
-          {photos.map((photo, index) => (
-            <div key={index} className="gallery-item break-inside-avoid">
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
-                className="h-auto w-full rounded-lg object-cover"
-              />
+      {/* Bento grid */}
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+        {galleryItems.map((item, i) => (
+          <div
+            key={item.src}
+            className={`reveal reveal-delay-${Math.min(i, 4)} gallery-card rounded-lg ${item.span}`}
+          >
+            <Image
+              src={item.src}
+              alt={item.alt}
+              fill
+              className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 50vw, 25vw"
+            />
+            <div className="overlay rounded-lg" />
+            {/* Hover label */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <span className="text-white text-sm font-display tracking-wider uppercase">
+                {item.label}
+              </span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
