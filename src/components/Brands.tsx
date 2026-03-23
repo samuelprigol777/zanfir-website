@@ -15,6 +15,9 @@ const brands = [
   "Ermenegildo Zegna",
   "Police",
   "David Beckham",
+  "Longchamp",
+  "Missoni",
+  "Tommy Hilfiger",
 ];
 
 export default function Brands() {
@@ -68,7 +71,7 @@ export default function Brands() {
 
       {/* Brand count */}
       <div className="px-5 md:px-8 mt-12 flex items-center gap-4">
-        <span className="reveal font-display text-display-md text-brand-400 font-bold">14+</span>
+        <span className="reveal font-display text-display-md text-brand-400 font-bold">17+</span>
         <span className="reveal reveal-delay-1 text-white/40 text-sm tracking-widest uppercase">
           Marcas Premium<br />Internacionais
         </span>

@@ -14,14 +14,14 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen bg-neutral-950 overflow-hidden">
-      {/* Store facade image with parallax */}
+      {/* Main display wall with OTICA ZANFIR sign */}
       <div
         className="absolute inset-0 w-full h-full"
         style={{ transform: `translateY(${offsetY * 0.3}px)` }}
       >
         <Image
-          src="/images/loja-7.jpg"
-          alt="Fachada Otica Zanfir"
+          src="/images/store/store-5.jpg"
+          alt="Parede principal com oculos e letreiro OTICA ZANFIR"
           fill
           className="object-cover object-center opacity-40"
           priority

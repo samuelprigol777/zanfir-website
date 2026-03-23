@@ -11,8 +11,9 @@ export default function About() {
             <span className="text-brand-400">em cada detalhe.</span>
           </h2>
           <p className="reveal reveal-delay-1 mt-8 text-white/50 text-lg md:text-xl max-w-2xl leading-relaxed">
-            Ha anos cuidando da sua visao com as melhores marcas do mundo.
-            Atendimento personalizado no coracao de Erechim.
+            Ha 7 anos transformando vidas com experiencias unicas.
+            Atendimento personalizado com as melhores marcas de luxo
+            no coracao de Erechim.
           </p>
         </div>
 
@@ -20,13 +21,21 @@ export default function About() {
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           <div className="reveal">
             <span className="font-display text-display-md text-brand-400 font-bold block">
-              14+
+              7+
+            </span>
+            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
+              Anos de Historia
+            </span>
+          </div>
+          <div className="reveal reveal-delay-1">
+            <span className="font-display text-display-md text-brand-400 font-bold block">
+              17+
             </span>
             <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
               Marcas Premium
             </span>
           </div>
-          <div className="reveal reveal-delay-1">
+          <div className="reveal reveal-delay-2">
             <span className="font-display text-display-md text-brand-400 font-bold block">
               100%
             </span>
@@ -34,20 +43,12 @@ export default function About() {
               Personalizado
             </span>
           </div>
-          <div className="reveal reveal-delay-2">
+          <div className="reveal reveal-delay-3">
             <span className="font-display text-display-md text-brand-400 font-bold block">
               Centro
             </span>
             <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
               De Erechim
-            </span>
-          </div>
-          <div className="reveal reveal-delay-3">
-            <span className="font-display text-display-md text-brand-400 font-bold block">
-              6x
-            </span>
-            <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
-              Por Semana
             </span>
           </div>
         </div>

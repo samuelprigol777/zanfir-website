@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function Statement() {
   return (
     <section className="relative bg-neutral-950">
-      {/* Full-bleed image with text overlay */}
+      {/* Full-bleed image with text overlay - interior with OTICA ZANFIR sign */}
       <div className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
         <Image
-          src="/images/loja-5.jpg"
-          alt="Interior Otica Zanfir"
+          src="/images/store/store-1.jpg"
+          alt="Interior Otica Zanfir - parede de oculos de sol"
           fill
           className="object-cover"
           sizes="100vw"
@@ -30,8 +30,8 @@ export default function Statement() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-7xl mx-auto">
           <div className="reveal gallery-card aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/images/loja-1.jpg"
-              alt="Interior da loja"
+              src="/images/store/store-4.jpg"
+              alt="Interior completo da loja com area de estar"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
@@ -40,8 +40,8 @@ export default function Statement() {
           </div>
           <div className="reveal reveal-delay-1 gallery-card aspect-[3/4] rounded-lg overflow-hidden row-span-2">
             <Image
-              src="/images/loja-2.jpg"
-              alt="Interior da loja"
+              src="/images/store/store-2.jpg"
+              alt="Vitrine de oculos de sol em detalhe"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
@@ -50,8 +50,8 @@ export default function Statement() {
           </div>
           <div className="reveal reveal-delay-2 gallery-card aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/images/loja-3.jpg"
-              alt="Interior da loja"
+              src="/images/store/store-3.jpg"
+              alt="Area de atendimento com poltronas"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
@@ -60,8 +60,8 @@ export default function Statement() {
           </div>
           <div className="reveal reveal-delay-3 gallery-card aspect-[4/3] rounded-lg overflow-hidden">
             <Image
-              src="/images/loja-4.jpg"
-              alt="Interior da loja"
+              src="/images/store/store-7.jpg"
+              alt="Fachada da loja com letreiro turquesa"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"

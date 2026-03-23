@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/loja-7.jpg",
+        url: "/images/store/store-7.jpg",
         width: 1200,
         height: 900,
         alt: "Ótica Zanfir - Fachada da loja",

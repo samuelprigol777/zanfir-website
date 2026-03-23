@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Contact() {
   return (
     <section id="contact" className="bg-neutral-950 py-16 md:py-24 px-4 md:px-8">
@@ -12,6 +14,18 @@ export default function Contact() {
           <h2 className="reveal font-display font-bold text-display-md text-white">
             Venha nos <span className="text-brand-400">visitar</span>
           </h2>
+        </div>
+
+        {/* Facade image */}
+        <div className="reveal mb-10 md:mb-14 rounded-xl overflow-hidden relative h-[250px] md:h-[400px]">
+          <Image
+            src="/images/store/store-7.jpg"
+            alt="Fachada da Otica Zanfir com letreiro turquesa"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
         </div>
 
         {/* Split layout */}
