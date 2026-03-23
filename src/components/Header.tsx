@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Inicio", href: "#hero" },
+  { label: "Início", href: "#hero" },
   { label: "Marcas", href: "#brands" },
   { label: "Galeria", href: "#gallery" },
-  { label: "Servicos", href: "#services" },
+  { label: "Serviços", href: "#services" },
   { label: "Contato", href: "#contact" },
 ];
 
@@ -60,7 +60,7 @@ export default function Header() {
             href="#hero"
             className="font-display font-bold text-sm md:text-base tracking-[0.15em] uppercase text-white hover:text-brand-400 transition-colors"
           >
-            Otica Zanfir
+            Ótica Zanfir
           </a>
 
           {/* Hamburger right */}

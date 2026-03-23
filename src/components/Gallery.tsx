@@ -5,33 +5,33 @@ import Image from "next/image";
 const galleryItems = [
   {
     src: "/images/store/store-5.jpg",
-    alt: "Parede principal com oculos e letreiro OTICA ZANFIR",
+    alt: "Parede principal com óculos e letreiro ÓTICA ZANFIR",
     span: "md:col-span-2 md:row-span-2",
     label: "Nossa Loja",
   },
   {
     src: "/images/products/ig-DNOA8eHAydT.jpg",
-    alt: "Oculos de sol rosa fuchsia",
+    alt: "Óculos de sol rosa fuchsia",
     span: "",
     label: "Fuchsia",
   },
   {
     src: "/images/products/ig-DN8WpuW3LJD.jpg",
-    alt: "Oculos de sol azul escuro com flores",
+    alt: "Óculos de sol azul escuro com flores",
     span: "",
-    label: "Colecao Floral",
+    label: "Coleção Floral",
   },
   {
     src: "/images/products/ig-DL2bA1Ngl0b.jpg",
-    alt: "Oculos de sol preto em superficie texturizada",
+    alt: "Óculos de sol preto em superfície texturizada",
     span: "",
     label: "Black Edition",
   },
   {
     src: "/images/products/ig-DTA6LioDrOt.jpg",
-    alt: "Prateleira de exposicao com diversos oculos de sol",
+    alt: "Prateleira de exposição com diversos óculos de sol",
     span: "md:col-span-2",
-    label: "Colecao Exclusiva",
+    label: "Coleção Exclusiva",
   },
   {
     src: "/images/products/ig-DSIf0SHDsmS.jpg",
@@ -41,13 +41,13 @@ const galleryItems = [
   },
   {
     src: "/images/store/store-3.jpg",
-    alt: "Area de atendimento com poltronas",
+    alt: "Área de atendimento com poltronas",
     span: "md:col-span-2",
     label: "Atendimento",
   },
   {
     src: "/images/store/store-4.jpg",
-    alt: "Interior completo da loja com area de estar e paredes de oculos",
+    alt: "Interior completo da loja com área de estar e paredes de óculos",
     span: "",
     label: "Ambiente Exclusivo",
   },
@@ -56,45 +56,45 @@ const galleryItems = [
 const productItems = [
   {
     src: "/images/products/ig-DNBFlbCAc00.jpg",
-    alt: "Armacao Chloe azul translucido",
-    brand: "Chloe",
-    type: "Armacao de Grau",
+    alt: "Armação Chloé azul translúcido",
+    brand: "Chloé",
+    type: "Armação de Grau",
   },
   {
     src: "/images/products/ig-DMF4-99g5kl.jpg",
-    alt: "Armacao em ouro rose",
-    brand: "Colecao",
-    type: "Ouro Rose",
+    alt: "Armação em ouro rosé",
+    brand: "Coleção",
+    type: "Ouro Rosé",
   },
   {
     src: "/images/products/ig-DNOA8eHAydT.jpg",
-    alt: "Oculos de sol rosa fuchsia",
+    alt: "Óculos de sol rosa fuchsia",
     brand: "Exclusivo",
-    type: "Oculos de Sol",
+    type: "Óculos de Sol",
   },
   {
     src: "/images/products/ig-DNYR2etyoY4.jpg",
-    alt: "Armacao metalica burgundy",
+    alt: "Armação metálica burgundy",
     brand: "Premium",
-    type: "Armacao Metalica",
+    type: "Armação Metálica",
   },
   {
     src: "/images/products/ig-DMsg4zOg9PW.jpg",
-    alt: "Armacao redonda tartaruga",
-    brand: "Classico",
+    alt: "Armação redonda tartaruga",
+    brand: "Clássico",
     type: "Tartaruga",
   },
   {
     src: "/images/products/ig-DN8WpuW3LJD.jpg",
-    alt: "Oculos de sol azul escuro com flores",
+    alt: "Óculos de sol azul escuro com flores",
     brand: "Floral",
-    type: "Oculos de Sol",
+    type: "Óculos de Sol",
   },
   {
     src: "/images/products/ig-DL2bA1Ngl0b.jpg",
-    alt: "Oculos de sol preto em superficie texturizada",
+    alt: "Óculos de sol preto em superfície texturizada",
     brand: "Black",
-    type: "Oculos de Sol",
+    type: "Óculos de Sol",
   },
   {
     src: "/images/products/ig-DSIf0SHDsmS.jpg",
@@ -114,7 +114,7 @@ export default function Gallery() {
             Galeria
           </p>
           <h2 className="reveal font-display font-bold text-display-md text-white">
-            Conheca nosso <span className="text-brand-400">espaco</span>
+            Conheça nosso <span className="text-brand-400">espaço</span>
           </h2>
         </div>
 
@@ -150,10 +150,10 @@ export default function Gallery() {
             Produtos
           </p>
           <h2 className="reveal font-display font-bold text-display-md text-white">
-            Nossos <span className="text-brand-400">oculos</span>
+            Nossos <span className="text-brand-400">óculos</span>
           </h2>
           <p className="reveal mt-4 text-neutral-400 max-w-2xl text-base md:text-lg">
-            Cada peca e selecionada com cuidado para oferecer estilo, conforto e qualidade.
+            Cada peça é selecionada com cuidado para oferecer estilo, conforto e qualidade.
             Confira alguns dos nossos modelos favoritos.
           </p>
         </div>

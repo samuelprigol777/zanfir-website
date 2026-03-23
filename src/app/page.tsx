@@ -7,6 +7,7 @@ import Statement from "@/components/Statement";
 import Brands from "@/components/Brands";
 import Gallery from "@/components/Gallery";
 import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -24,6 +25,7 @@ export default function Home() {
         <Brands />
         <Gallery />
         <Services />
+        <Testimonials />
         <About />
         <Contact />
       </main>

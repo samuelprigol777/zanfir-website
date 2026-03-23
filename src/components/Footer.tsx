@@ -8,7 +8,7 @@ export default function Footer() {
             href="#hero"
             className="font-display font-bold text-sm tracking-[0.15em] uppercase text-white hover:text-brand-400 transition-colors"
           >
-            Otica Zanfir
+            Ótica Zanfir
           </a>
 
           {/* Social links */}
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-white/20 text-xs tracking-wider">
-            &copy; {new Date().getFullYear()} Otica Zanfir. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Ótica Zanfir. Todos os direitos reservados.
           </p>
         </div>
       </div>

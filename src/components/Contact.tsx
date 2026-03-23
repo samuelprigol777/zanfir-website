@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="reveal mb-10 md:mb-14 rounded-xl overflow-hidden relative h-[250px] md:h-[400px]">
           <Image
             src="/images/store/store-7.jpg"
-            alt="Fachada da Otica Zanfir com letreiro turquesa"
+            alt="Fachada da Ótica Zanfir com letreiro turquesa"
             fill
             className="object-cover"
             sizes="100vw"
@@ -40,7 +40,7 @@ export default function Contact() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localizacao Otica Zanfir"
+              title="Localização Ótica Zanfir"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function Contact() {
           <div className="reveal reveal-delay-1 flex flex-col justify-center">
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/555437124500?text=Ola! Gostaria de agendar uma visita na Otica Zanfir."
+              href="https://wa.me/555437124500?text=Olá! Gostaria de agendar uma visita na Ótica Zanfir."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl p-5 md:p-6 transition-all duration-300 mb-8"
@@ -61,7 +61,7 @@ export default function Contact() {
                   Fale pelo WhatsApp
                 </span>
                 <span className="text-white/80 text-sm">
-                  Resposta rapida e personalizada
+                  Resposta rápida e personalizada
                 </span>
               </div>
               <svg
@@ -79,10 +79,10 @@ export default function Contact() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-white/30 text-xs tracking-[0.2em] uppercase mb-2">
-                  Endereco
+                  Endereço
                 </h3>
                 <p className="text-white text-base">
-                  R. Torres Goncalves, 305 - Centro
+                  R. Torres Gonçalves, 305 - Centro
                   <br />
                   Erechim - RS, 99700-442
                 </p>
@@ -102,14 +102,14 @@ export default function Contact() {
 
               <div>
                 <h3 className="text-white/30 text-xs tracking-[0.2em] uppercase mb-2">
-                  Horario
+                  Horário
                 </h3>
                 <div className="text-white text-base space-y-1">
                   <p>
                     <span className="text-white/50">Seg - Sex:</span> 08:00 - 18:00
                   </p>
                   <p>
-                    <span className="text-white/50">Sabado:</span> 08:00 - 12:00
+                    <span className="text-white/50">Sábado:</span> 08:00 - 12:00
                   </p>
                 </div>
               </div>

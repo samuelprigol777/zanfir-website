@@ -9,7 +9,7 @@ export default function Statement() {
       <div className="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
         <Image
           src="/images/store/store-1.jpg"
-          alt="Interior Otica Zanfir - parede de oculos de sol"
+          alt="Interior Ótica Zanfir - parede de óculos de sol"
           fill
           className="object-cover"
           sizes="100vw"
@@ -19,8 +19,8 @@ export default function Statement() {
         {/* Large overlaid text */}
         <div className="absolute inset-0 flex items-center justify-center px-6">
           <h2 className="reveal font-display font-bold text-display-lg text-white text-center max-w-4xl">
-            Voce ve a{" "}
-            <span className="text-brand-400 italic">diferenca.</span>
+            Você vê a{" "}
+            <span className="text-brand-400 italic">diferença.</span>
           </h2>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Statement() {
           <div className="reveal gallery-card aspect-[4/3] rounded-lg overflow-hidden">
             <Image
               src="/images/store/store-4.jpg"
-              alt="Interior completo da loja com area de estar"
+              alt="Interior completo da loja com área de estar"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
@@ -41,7 +41,7 @@ export default function Statement() {
           <div className="reveal reveal-delay-1 gallery-card aspect-[3/4] rounded-lg overflow-hidden row-span-2">
             <Image
               src="/images/store/store-2.jpg"
-              alt="Vitrine de oculos de sol em detalhe"
+              alt="Vitrine de óculos de sol em detalhe"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"
@@ -51,7 +51,7 @@ export default function Statement() {
           <div className="reveal reveal-delay-2 gallery-card aspect-[4/3] rounded-lg overflow-hidden">
             <Image
               src="/images/store/store-3.jpg"
-              alt="Area de atendimento com poltronas"
+              alt="Área de atendimento com poltronas"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 50vw, 25vw"

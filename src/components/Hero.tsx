@@ -21,7 +21,7 @@ export default function Hero() {
       >
         <Image
           src="/images/store/store-5.jpg"
-          alt="Parede principal com oculos e letreiro OTICA ZANFIR"
+          alt="Parede principal com óculos e letreiro ÓTICA ZANFIR"
           fill
           className="object-cover object-center opacity-40"
           priority
@@ -34,12 +34,12 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-end min-h-screen pb-16 md:pb-24 px-4">
         {/* Small tagline above */}
         <p className="text-brand-400 text-xs md:text-sm tracking-[0.3em] uppercase mb-6 animate-fade-in">
-          Voce ve a diferenca
+          Você vê a diferença
         </p>
 
         {/* Giant brand name */}
         <h1 className="font-display font-black text-display-xl text-center text-white leading-none tracking-tighter">
-          <span className="block">OTICA</span>
+          <span className="block">ÓTICA</span>
           <span className="block text-brand-400">ZANFIR</span>
         </h1>
 

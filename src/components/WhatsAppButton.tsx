@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/555437124500?text=Ola! Gostaria de agendar uma visita na Otica Zanfir."
+      href="https://wa.me/555437124500?text=Olá! Gostaria de agendar uma visita na Ótica Zanfir."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-lg shadow-[#25D366]/30 hover:scale-110 transition-transform duration-300 wa-pulse"

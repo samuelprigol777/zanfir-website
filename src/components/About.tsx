@@ -7,13 +7,13 @@ export default function About() {
         {/* Large statement text */}
         <div className="max-w-5xl">
           <h2 className="reveal font-display font-bold text-display-lg text-white leading-tight">
-            Tradicao e sofisticacao{" "}
+            Tradição e sofisticação{" "}
             <span className="text-brand-400">em cada detalhe.</span>
           </h2>
           <p className="reveal reveal-delay-1 mt-8 text-white/50 text-lg md:text-xl max-w-2xl leading-relaxed">
-            Ha 7 anos transformando vidas com experiencias unicas.
+            Há 7 anos transformando vidas com experiências únicas.
             Atendimento personalizado com as melhores marcas de luxo
-            no coracao de Erechim.
+            no coração de Erechim.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ export default function About() {
               7+
             </span>
             <span className="text-white/40 text-sm tracking-widest uppercase mt-2 block">
-              Anos de Historia
+              Anos de História
             </span>
           </div>
           <div className="reveal reveal-delay-1">

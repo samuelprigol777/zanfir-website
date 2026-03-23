@@ -3,7 +3,7 @@
 const brands = [
   "Gucci",
   "YSL",
-  "Chloe",
+  "Chloé",
   "Salvatore Ferragamo",
   "Jimmy Choo",
   "Michael Kors",
